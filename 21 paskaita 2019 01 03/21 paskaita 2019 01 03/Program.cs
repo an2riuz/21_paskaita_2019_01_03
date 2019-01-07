@@ -10,6 +10,7 @@ namespace _21_paskaita_2019_01_03
     {
         static void Main(string[] args)
         {
+            /*
             List<int> sarasas = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
             var result = from skaicius in sarasas
@@ -61,6 +62,25 @@ namespace _21_paskaita_2019_01_03
 
             Console.WriteLine("Suma: " + result6.Sum());
             Console.WriteLine("Vidurkis: " + result6.Average());
+            */
+
+            Singleton singleton1 = Singleton.Instance();
+            Singleton singleton2 = Singleton.Instance();
+
+            if (singleton1 == singleton2)
+            {
+                Console.WriteLine("Tas pats objektas!");
+            }
+
+            // Proxy
+            Proxy myProxy = new Proxy(new RealObject());
+            myProxy.DoStuff();
+
+            // Command
+            MyCommand testCommand = new MyCommand();
+            testCommand.Execute();
+
+            // HTTP
 
 
             Console.ReadKey();

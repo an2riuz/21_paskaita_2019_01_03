@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace _21_paskaita_2019_01_03
 {
-    class Student
+    class RealObject : IStuffDoer
     {
-     public int Id { get; set; }
+        public void DoStuff()
+        {
+            Console.WriteLine("Do stuff!!!");
+        }
     }
 }

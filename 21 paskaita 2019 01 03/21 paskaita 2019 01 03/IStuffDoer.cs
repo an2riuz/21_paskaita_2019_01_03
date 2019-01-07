@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace _21_paskaita_2019_01_03
 {
-    class Student
+    interface IStuffDoer
     {
-     public int Id { get; set; }
+        void DoStuff();
     }
 }

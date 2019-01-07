@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace _21_paskaita_2019_01_03
 {
-    class Student
+    class Course
     {
-     public int Id { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public List<Student> Students { get; set; }
     }
 }
